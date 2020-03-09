@@ -164,7 +164,7 @@ class GzserverRunner(Runner):
         self.cmd = "gzserver"
         self.args = ["--verbose",
                      workspace_dir + "/Tools/sitl_gazebo/worlds/" +
-                     model + ".world"]
+                     "empty.world"]
         self.log_prefix = "gzserver"
 
 
