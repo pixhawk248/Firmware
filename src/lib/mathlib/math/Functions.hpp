@@ -41,15 +41,11 @@
 
 #include "Limits.hpp"
 
+#include <matrix/matrix/math.hpp>
+using matrix::sign;
+
 namespace math
 {
-
-// Type-safe signum function
-template<typename T>
-int sign(T val)
-{
-	return (T(FLT_EPSILON) < val) - (val < T(FLT_EPSILON));
-}
 
 // Type-safe signum function with zero treated as positive
 template<typename T>
